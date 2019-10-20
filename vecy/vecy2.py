@@ -1,0 +1,1 @@
+import itertools;X = input();print(min([x for x in [int(''.join(x)) for x in itertools.permutations(X)] if x > int(X)]) if len([x for x in [int(''.join(x)) for x in itertools.permutations(X)] if x > int(X)]) != 0 else 0)

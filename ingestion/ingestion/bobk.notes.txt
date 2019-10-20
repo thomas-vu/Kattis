@@ -1,0 +1,5 @@
+A Question of Ingestion notes:
+- changed directory name to ingestion
+- added CTD validator
+- split LaTeX input to fit 80-column lines
+- removed extra spaces at end of most test cases; removed extra line from one

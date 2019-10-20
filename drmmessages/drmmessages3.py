@@ -1,0 +1,1 @@
+m = input();print("".join([chr((ord(c) + ord([chr((ord(c) - 65 + sum([ord(x) - 65 for x in m[len(m)//2:]])) % 26 + 65) for c in m[len(m)//2:]][i]) - 130) % 26 + 65) for i, c in enumerate([chr((ord(c) - 65 + sum([ord(x) - 65 for x in m[:len(m)//2]])) % 26 + 65) for c in m[:len(m)//2]])]))
