@@ -5,15 +5,15 @@
 
 # Saving three lines. (6 -> 3)
 try:
-	while True:
-		input()
-		print(input())
+    while True:
+        input()
+        print(input())
 except:
-	pass
+    pass
 
 from sys import stdin
 for _ in stdin:
-	print(input())
+    print(input())
 
 # Otherwise, using stdin always saves two lines whether or not
 # the first line of each test case is necessary.
@@ -21,24 +21,24 @@ for _ in stdin:
 # Saving two lines. First line unnecessary. (5 -> 3)
 # (See 'functionalfun' on Kattis for an example)
 try:
-	while input():
-		print(input())
+    while input():
+        print(input())
 except:
-	pass
+    pass
 
 from sys import stdin
 for _ in stdin:
-	print(input())
+    print(input())
 
 # Saving two lines. First line necessary. (6 -> 4)
 try:
-	while True:
-		print(input())
-		print(input())
+    while True:
+        print(input())
+        print(input())
 except:
-	pass
+    pass
 
 from sys import stdin
 for line in stdin:
-	print(line)
-	print(input())
+    print(line)
+    print(input())

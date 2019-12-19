@@ -31,15 +31,15 @@ def primeFactors(n):
 k = 0
 n = int(input())
 while n % 2 == 0:
-	k += 1
-	n = n / 2
+    k += 1
+    n = n / 2
      
 for i in range(3, int(math.sqrt(n))+1, 2):
-	while n % i == 0:
-		k += 1
-		n = n / i
+    while n % i == 0:
+        k += 1
+        n = n / i
          
 if n > 2:
     print(1)
 else:
-	print(k)
+    print(k)

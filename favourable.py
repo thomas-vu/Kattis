@@ -4,7 +4,7 @@ def solve(page):
     if book[page] == ['catastrophically']:
         return 0
     if page not in memo:
-    	memo[page] = solve(book[page][0]) + solve(book[page][1]) + solve(book[page][2])
+        memo[page] = solve(book[page][0]) + solve(book[page][1]) + solve(book[page][2])
     return memo[page]
 
 for _ in range(int(input())):

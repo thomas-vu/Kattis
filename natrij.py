@@ -11,10 +11,10 @@ S -= M * 60
 
 H, M, S = str(H), str(M), str(S)
 if len(H) == 1:
-	H = '0' + H
+    H = '0' + H
 if len(M) == 1:
-	M = '0' + M
+    M = '0' + M
 if len(S) == 1:
-	S = '0' + S
+    S = '0' + S
 
 print('{}:{}:{}'.format(H, M, S))

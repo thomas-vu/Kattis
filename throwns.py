@@ -6,20 +6,20 @@ current = 0
 undoing = False
 for command in commands:
 
-	if command == 'undo':
-		undoing = True
-		continue
-	
-	command = int(command)
-	if undoing:
-		undoing = False
-		for _ in range(command):
-			positions.pop()
-		current = positions[-1] if positions else 0
-	else:
-		newcurrent = (current + command) % n
-		positions.append(newcurrent)
-		current = newcurrent
+    if command == 'undo':
+        undoing = True
+        continue
+    
+    command = int(command)
+    if undoing:
+        undoing = False
+        for _ in range(command):
+            positions.pop()
+        current = positions[-1] if positions else 0
+    else:
+        newcurrent = (current + command) % n
+        positions.append(newcurrent)
+        current = newcurrent
 
 print(current)
 

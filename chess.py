@@ -9,22 +9,22 @@ d = {
 }
 
 for _ in range(int(input())):
-	x1, x2, y1, y2 = input().split()
-	x = x1 + x2
-	y = y1 + y2
+    x1, x2, y1, y2 = input().split()
+    x = x1 + x2
+    y = y1 + y2
 
-	if x == y:
-		print('0', x1, x2)
+    if x == y:
+        print('0', x1, x2)
 
-	elif x in diag and y in diag:
-		print('1', x1, x2, y1, y2)
+    elif x in diag and y in diag:
+        print('1', x1, x2, y1, y2)
 
-	for di in d:
-		if x in d[di] and y in d[di]:
-			print('1', x1, x2, y1, y2)
+    for di in d:
+        if x in d[di] and y in d[di]:
+            print('1', x1, x2, y1, y2)
 
-	for di in d:
-		if x in d[di]:
-			for dj in d:
-				if y in dj:
-					print('3', x1, x2, di, dj, y1, y2)
+    for di in d:
+        if x in d[di]:
+            for dj in d:
+                if y in dj:
+                    print('3', x1, x2, di, dj, y1, y2)

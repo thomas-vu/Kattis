@@ -2,7 +2,7 @@ import string
 ABC = string.ascii_uppercase
 
 def rotate(c, rot):
-	return ABC[(ABC.index(c) + rot) % 26]
+    return ABC[(ABC.index(c) + rot) % 26]
 
 message = input()
 half = len(message) // 2

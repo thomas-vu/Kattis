@@ -7,9 +7,9 @@ i = 0
 j = 0
 
 while j < m:
-	if T[i] <= L[j]:
-		completed += 1
-		i += 1
-	j += 1
+    if T[i] <= L[j]:
+        completed += 1
+        i += 1
+    j += 1
 
 print(completed)

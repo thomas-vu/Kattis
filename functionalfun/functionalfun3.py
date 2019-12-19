@@ -5,18 +5,18 @@ for _ in stdin:
     B = set()
     n = int(input())
     for _ in range(n):
-    	a, _, b = input().split()
-    	#a, b = input().split()[::2]
-    	#a, b = input().split(' -> ')
-    	A.add(a)
-    	B.add(b)
+        a, _, b = input().split()
+        #a, b = input().split()[::2]
+        #a, b = input().split(' -> ')
+        A.add(a)
+        B.add(b)
     if len(A) < n:
-    	print('not a function')
+        print('not a function')
     elif len(B) == n == codomain:
-    	print('bijective')
+        print('bijective')
     elif len(B) == n:
-    	print('injective')
+        print('injective')
     elif len(B) == codomain:
-    	print('surjective')
+        print('surjective')
     else:
-    	print('neither injective nor surjective')
+        print('neither injective nor surjective')

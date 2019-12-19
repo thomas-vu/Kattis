@@ -2,11 +2,11 @@ import sys; from collections import defaultdict
 sys.setrecursionlimit(2000)
 
 def solve(v, steps, universe, ans):
-	if steps in ans[v]: return
+    if steps in ans[v]: return
 
-	ans[v] |= set([steps])
-	for child in universe[v]:
-		solve(child, steps+1, universe, ans)
+    ans[v] |= set([steps])
+    for child in universe[v]:
+        solve(child, steps+1, universe, ans)
 
 #-----------------------------------------------------------------
 
@@ -25,10 +25,10 @@ solve(1, 0, universe1, ans1)
 solve(1, 0, universe2, ans2)
 
 for _ in range(int(input())):
-	q = int(input())
-	for x in ans1[num_v1]:
-		if q-x in ans2[num_v2]:
-			print('Yes')
-			break
-	else:
-		print('No')
+    q = int(input())
+    for x in ans1[num_v1]:
+        if q-x in ans2[num_v2]:
+            print('Yes')
+            break
+    else:
+        print('No')

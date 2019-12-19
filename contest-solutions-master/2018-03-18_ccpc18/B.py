@@ -1,7 +1,7 @@
 def gcd(a, b):
-	if not b:
-		return a
-	return gcd(b, a % b)
+    if not b:
+        return a
+    return gcd(b, a % b)
 
 a, b = map(int, input().split('/'))
 a -= 32 * b
